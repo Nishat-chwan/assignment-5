@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- title and logo  -->
+    <title>Home page | GitHub Tracker </title>
+    <link rel="shortcut icon" href="assets/github-brands-solid.png" type="image/x-icon" />
+
+    <!-- font awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- font integration  -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- tailwind+daisyui  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- stylesheet  -->
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+
+
+ <body>
+    <div class="navbar bg-base-100 shadow-sm">
+  <div class="flex-1">
+    <a class="btn btn-ghost text-xl"><i class="fa-brands fa-github"></i>GitHub Issues Tracker</a>
+  </div>
+  <div class="flex gap-2">
+    <input type="text" placeholder="Search issues.." class="input input-bordered w-24 md:w-auto" />
+<button class="btn bg-[#4A00FF] hover:bg-[#3b00cc] text-white border-none">
+    <i class="fa-solid fa-plus"></i> New Issue
+</button>
+  </div>
+</div>
+
+
+<div class="p-6"> 
+  
+  <section class="flex gap-3 mb-6">
+    <button class="btn btn-sm bg-[#4A00FF] hover:bg-[#3b00cc] text-white border-none px-6">
+      All
+    </button>
+    
+    <button class="btn btn-sm bg-white border-base-300 hover:bg-base-100 text-slate-500 font-medium px-6">
+      Open
+    </button>
+    
+    <button class="btn btn-sm bg-white border-base-300 hover:bg-base-100 text-slate-500 font-medium px-6">
+      Closed
+    </button>
+  </section>
+
+  <div class="card bg-white border border-base-300 rounded-lg p-4 flex flex-row items-center justify-between shadow-sm">
+    <div class="flex items-center gap-4">
+      <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center text-[#4A00FF]">
+        <img src="assets/Aperture.png">
+      </div>
+      
+      
+      <div>
+        <h2 class="text-lg font-bold text-black">50 Issues</h2>
+        <p class="text-gray-500 text-sm">Track and manage your project issues</p>
+      </div>
+
+    </div>
+
+    
+
+    <div class="flex flex-col sm:flex-row gap-4 text-black font-medium ">
+      <div class="flex items-center gap-2">
+        <span class="w-3 h-3 bg-emerald-500 rounded-full"></span> Open
+      </div>
+      <div class="flex items-center gap-2">
+        <span class="w-3 h-3 bg-indigo-500 rounded-full"></span> Closed
+      </div>
+    </div>
+    
+  </div>
+  <div id="level-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-8">
+</div>
+</div>
+
+<script src="script/home.js"></script>
+  </body>
+  </html>
+
+

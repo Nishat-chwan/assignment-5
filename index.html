@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- title and logo  -->
+    <title>Github Issue Tracker</title>
+    <link rel="shortcut icon" href="assets/github-brands-solid.png" type="image/x-icon" />
+
+    <!-- font awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- font integration  -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- tailwind+daisyui  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- stylesheet  -->
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+<body>
+    
+ <div class="fieldset mx-auto w-96 bg-base-200 mt-25 border-base-300 rounded-box border p-4">
+
+  <div class="flex flex-col items-center gap-2">
+    <div class="w-20 h-20 rounded-full flex items-center justify-center">
+       <img src="assets/github-logo.png">
+    </div>
+    <h1 class="text-2xl font-bold text-black mt-2">GitHub Issues Tracker</h1>
+    <p class="text-slate-500 text-sm">Sign in to manage your issues</p>
+  </div>
+
+  <div class="text-left mt-4">
+    <label class="label font-semibold pb-1">Username</label>
+    <input type="text" id="username" placeholder="Enter Username" class="input input-bordered w-full" id="username" />
+    <h4 class="text-xs text-blue-600 mt-1 ">Default: admin</h4>
+
+    <label class="label font-semibold pb-1 mt-4">Password</label>
+    <input type="password" id="password" placeholder="Enter Password" class="input input-bordered w-full" id="password" />
+    <h4 class="text-xs text-blue-600 mt-1 ">Default: admin123</h4>
+  </div>
+
+  <button id="signup-btn" class="btn bg-indigo-600 hover:bg-indigo-700 text-white border-none mt-4">
+    Sign In
+  </button>
+
+  <div class="divider text-xs text-slate-400">OR</div>
+
+  <div class=" rounded-lg p-4 text-sm ">
+    <p class="text-gray-400 mb-2">Demo Credentials:</p>
+    <p class="font-bold">Username: <span class="font-normal">admin</span> </p>
+    <p class="font-bold"> Password: <span class="font-normal">admin123</span></p>
+  </div>
+</div>
+
+<script src="script/index.js"></script>
+</body>
+</html>
